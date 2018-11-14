@@ -40,7 +40,7 @@
               $(document).ready(function(){
 
                 var iframe = document.getElementsByTagName("iframe")[0];
-                let url = "http://localhost:5000/rotator";
+                let url = "https://localhost:5000/rotator";
                 let queryString = window.location.search;
                 var currentTime = Math.round(new Date().getTime() / 1000);
                 var timeLapse = (window.localStorage.clicktool_prev_visit) ? (currentTime - window.localStorage.clicktool_prev_visit) : false;
