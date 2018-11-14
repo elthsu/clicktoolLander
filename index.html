@@ -40,14 +40,14 @@
               $(document).ready(function(){
 
                 var iframe = document.getElementsByTagName("iframe")[0];
-                let url = "https://localhost:5000/rotator";
-                let queryString = window.location.search;
+                var url = "http://localhost:5000/rotator";
+                var queryString = window.location.search;
                 var currentTime = Math.round(new Date().getTime() / 1000);
                 var timeLapse = (window.localStorage.clicktool_prev_visit) ? (currentTime - window.localStorage.clicktool_prev_visit) : false;
                 queryString = queryString.substring(1);
 
 
-                let data = JSON.stringify(Object.assign({
+                var data = JSON.stringify(Object.assign({
                   campaignId : "31619f16-d60f-46a7-a592-592e51c94ef7",
                   cookies: (document.cookie) ? document.cookie : false,
                   timeSincePreviousVisit: timeLapse,
